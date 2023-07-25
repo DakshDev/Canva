@@ -1,0 +1,276 @@
+@media screen and (max-width: 1290px){
+#bottom-doc-box>#doc-main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0px 0px;
+	padding: 0px 20px;
+}
+#top-text>#center-text{
+	font-size: 27px;
+}
+}
+
+
+@media screen and (max-width: 1176px){
+#bottom-doc-box>#doc-main>.docs-content>.inner-child{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+}
+#bottom-doc-box>#doc-main>.docs-content>.inner-child{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 5px 0px;
+	width: 90px;
+}
+#bottom-doc-box>#doc-main>.docs-content:nth-child(8){
+	display: none;
+}	
+#bottom-doc-box>#doc-main>.docs-content>.inner-child>span:nth-child(1){
+	width: 100%;
+}
+#bottom-doc-box>#doc-main>.docs-content>.inner-child>span:nth-child(1)>svg{
+	height: 25px;
+	width: 25px;
+	padding: 10px;
+	box-sizing: content-box;
+	border-radius: 50%;
+	background: white;
+	cursor: pointer;
+}
+
+
+
+
+
+
+/*Nav Bar*/
+	#nav-buttons>button:nth-child(5){
+		display: none;
+	}
+	#nav-buttons>button:nth-child(6){
+		display: none;
+	}
+/*Responsive nav more btn*/
+	#responsive-more-btn{
+		display: block;
+		margin: 0px 10px;
+	}
+	#responsive-svg-more{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+		padding: 0px 5px;
+		transition: 0.2s;
+		cursor: pointer;
+	}
+	#responsive-svg-more:hover{
+		background: var(--dark-gray);
+	} 
+	#responsive-svg-more>svg>#responsive-more{
+		color: white;
+	}
+	#responsive-svg-more:hover #responsive-nav-btn{
+		display: block;
+	}
+	#responsive-nav-btn{
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		grid-gap: 10px 0px;
+		display: none;
+		position: absolute;
+		left: 0px;
+		top: 100%;
+		background: var(--dark-black);
+		border-radius: 4px;
+	}
+	#responsive-nav-btn>button{
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		padding: 10px;
+		box-sizing: content-box;
+		border-radius: 4px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		width: 150px;
+		margin-top: 5px;
+	}
+	#responsive-nav-btn>button:hover{
+		background: var(--dark-gray);
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 970px){
+#boredr2{
+	border: 1px solid gray;
+	width: 80%;
+	position: relative;
+	left: 10%;
+	display: block;
+}
+#border{
+	border: none;
+}
+
+#bottom-doc-box>#doc-main>.docs-content:nth-child(8){
+	display: block;
+}
+
+/*Toogle Bar*/
+#bar-check{
+	display: none;
+}
+#bar-check:checked ~ #content-body > #left-box{
+	display: block;
+}
+#left-box{
+	width: 300px;
+	height: 100vh;
+	padding: 16px 10px;
+	display: flex;
+	justify-content: center;
+	display: none;
+	background: var(--bg-color);
+}
+
+#left-nav-content{
+	display: block;
+	justify-content: center;
+	position: relative;
+	margin-top: 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 0px 5px;
+	height: 100vh;
+}
+/*Bottom*/
+#bottom{
+	width: 100%;
+	display: grid;
+	grid-gap: 5px 0px;
+	align-items: flex-end;
+	align-content: flex-end;
+	justify-content: center;
+	padding: 10px 0px;
+}
+
+
+
+/*Top Links*/
+#nav-buttons>button{
+	display: none;
+}
+#responsive-more-btn{
+	display: none;
+}
+
+#absolute-links{
+	display: block;
+}
+.absolute-inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.absolute-inner>button{
+	height: 42px;
+	width: 244px;
+	padding: 6px 16px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.1s;
+	text-align: left;
+	display: flex;
+	gap: 0px 10px;
+	align-items: center;
+}
+.absolute-inner>button:hover{
+	background: var(--dark-black);
+}
+.absolute-inner>button:active{
+	background: var(--dark-gray);
+}
+
+#border2{
+	border: 1px solid gray;
+	width: 80%;
+	position: relative;
+	left: 10%;
+	display: block;
+}	
+
+
+
+
+
+/*Left box*/
+#canva-pro{
+	display: none;
+}
+
+
+/*Left canva pro*/
+#canva-pro2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px 0px;
+	display: block;
+}
+#canva-pro2>button{
+	height: 38px;
+	width: 244px;
+	padding: 6px;
+	background: var(--dark-black);
+	border: none;
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.1s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0px 5px;
+}
+#canva-pro2>button:active{
+	background: var(--dark-gray);
+}
+#canva-pro2>button>svg{
+	height: 15px;
+	width: 15px;
+	background: orange;
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/*#right-box{*/
+
+#right-box{
+	position: absolute;
+}
+
+
+
+}

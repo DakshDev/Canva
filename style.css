@@ -1,0 +1,867 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background: var(--bg-color);
+}
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: arial, serif, sans-serif;
+	color: white;
+	box-sizing: border-box;
+	font-size: 14px;
+	text-align: center;
+}
+:root{
+	--sea-green: #00c4cc;
+    --purple: #8b3dff;
+    --dark-purple: #7300e6;
+    --dark-blue: #5100a8;
+    --bg-color: #18191b;
+	--dark-black: #252627;
+	--dark-gray: #464747;
+	--gray: gray;  
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track { 
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--dark-gray); 
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray); 
+}
+::placeholder{
+	color: var(--gray);
+}
+input[type='search']::-webkit-search-cancel-button{
+	-webkit-appearance: ;	
+	padding: 2px;
+	cursor: default;
+}
+
+#main-container{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: var(--bg-color);
+}
+/*Toogle Bar*/
+#bar-check{
+	display: none;
+}
+#bar-check:checked ~ #content-body > #left-box{
+	display: none;
+}
+
+/*=======================*/
+/*=======================*/
+/*=======================*/
+				/*NAV BAR*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+#nav-bar{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	height: 72px;
+	background: var(--dark-black);
+	border-top: 1px solid var(--dark-gray);
+	border-bottom: 1px solid var(--dark-gray);
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+#nav-content{
+	width: 100%;
+	padding: 0px 20px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+}
+#bar{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	position: absolute;
+	top: 18px;
+	left: 20px;
+	z-index: 3;
+}
+#bar>svg{
+	width: 24px;
+	height: 24px;
+	padding: 8px;
+	border-radius: 2px;
+	box-sizing: content-box;
+}
+#bar>svg:hover{
+	background: var(--dark-gray);
+	cursor: pointer;
+}
+#bar>svg:active{
+	background: var(--gray);
+	cursor: pointer;
+}
+
+
+
+
+/*Left Button*/
+#canva-logo{
+	margin: 0px 30px;
+	display: flex;
+	align-items: center;
+}
+#nav-buttons{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 40px;
+}
+#nav-buttons>button{
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	box-sizing: content-box;
+	margin-right: 5px;
+	border-radius: 4px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	
+}
+#nav-buttons>button:hover{
+	background: var(--dark-gray);
+	transition: 0.2s;
+}
+#nav-buttons>button>svg{
+	width: 14px;
+	height: 14px;
+}
+
+
+
+
+
+/*Right Button*/
+#right-buttons{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	float: right;
+	gap: 0px 10px;
+}
+ 
+
+
+/*Download Btn*/
+#download-svg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#download-svg>svg{
+	height: 24px;
+	width: 24px;
+	padding: 6px;
+	box-sizing: content-box;
+	border-radius: 4px;
+	transition: 0.1s;
+	cursor: pointer;
+}
+#download-svg>svg:hover{
+	background: var(--dark-gray);
+}
+
+/*Setting Btn*/
+#setting-svg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#setting-svg>svg{
+	height: 24px;
+	width: 24px;
+	padding: 6px;
+	box-sizing: content-box;
+	border-radius: 4px;
+	transition: 0.1s;
+	cursor: pointer;
+}
+#setting-svg>svg:hover{
+	background: var(--dark-gray);
+}
+
+/*Notification Btn*/
+#notification-svg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#notification-svg>svg{
+	height: 24px;
+	width: 24px;
+	padding: 6px;
+	box-sizing: content-box;
+	border-radius: 4px;
+	transition: 0.1s;
+	cursor: pointer;
+}
+#notification-svg>svg:hover{
+	background: var(--dark-gray);
+}
+
+/*Create Btn*/
+#create-design-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5px;
+}
+#create-design-btn>a{
+	width: 137px;
+	height:  40px;
+	background: var(--purple);
+	border: none;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	font-weight: bold;
+	transition: 0.1s;
+}
+#create-design-btn>a:hover{
+	background: var(--dark-purple);
+}
+
+/*User Logo*/
+#user{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#user>svg{
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************/
+/******************************/
+/******************************/
+				/*Content Body*/
+/******************************/
+/******************************/
+/******************************/
+
+
+#content-body{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	display: flex;
+}
+
+
+
+
+
+/*========================*/
+/*========================*/
+/*========================*/
+				/*Left Box*/
+/*========================*/
+/*========================*/
+/*========================*/
+#left-box{
+	width: 300px;
+	height: 100vh;
+	padding: 16px 10px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 5;
+}
+
+#left-nav-content{
+	display: grid;
+	justify-content: center;
+	position: relative;
+	margin-top: 72px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 0px 5px;
+}
+
+/*Left bar top*/
+#top{
+	display: grid;
+	grid-gap: 10px 0px;
+	align-items: flex-start;
+	align-content: flex-start;
+	padding-bottom: 10px;
+}
+
+
+/*Left Accout Profile*/
+#left-bar-acc{
+	display: flex;
+	align-items: center;
+	width: 220px;
+	height: 42px;
+	padding: 8px 12px;
+	gap: 0px 10px;
+	box-sizing: content-box;
+}
+#left-user{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#left-user>svg{
+	height: 40px;
+	width: 40px;
+}
+#acc-text{
+	line-height: 20px;
+}
+#acc-text>h1{
+	text-align: left;
+}
+#acc-text>p{
+	text-align: left;
+	font-size: 12px;
+	color: var(--gray);
+}
+
+
+
+/*Left canva pro*/
+#canva-pro{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 0px;
+}
+#canva-pro>button{
+	height: 38px;
+	width: 244px;
+	padding: 6px;
+	background: var(--dark-black);
+	border: none;
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.1s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0px 5px;
+}
+#canva-pro>button:active{
+	background: var(--dark-gray);
+}
+#canva-pro>button>svg{
+	height: 15px;
+	width: 15px;
+	background: orange;
+	border-radius: 50%;
+}
+
+
+
+
+
+/*left home*/
+#left-home{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#left-home>button{
+	height: 42px;
+	width: 244px;
+	padding: 6px 16px;
+	background: var(--dark-gray);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.1s;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	gap: 0px 10px;
+}
+#left-home>button>svg{
+	height: 24px;
+	width: 24px;
+}
+
+
+
+/*left project*/
+#left-project{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#left-project>button{
+	height: 42px;
+	width: 244px;
+	padding: 6px 16px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.1s;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	gap: 0px 10px;
+}
+#left-project>button:hover{
+	background: var(--dark-black);
+}
+#left-project>button:active{
+	background: var(--dark-gray);
+}
+#left-project>button>svg{
+	height: 24px;
+	width: 24px;
+}
+
+
+
+
+/*left Template*/
+#left-Template{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#left-Template>button{
+	height: 42px;
+	width: 244px;
+	padding: 6px 16px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.1s;
+	text-align: left;
+	display: flex;
+	gap: 0px 10px;
+	align-items: center;
+}
+#left-Template>button:hover{
+	background: var(--dark-black);
+}
+#left-Template>button:active{
+	background: var(--dark-gray);
+}
+#left-Template>button>svg{
+	height: 24px;
+	width: 24px;
+}
+
+
+
+/*left brand*/
+#left-brand{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#left-brand>button{
+	height: 42px;
+	width: 244px;
+	padding: 6px 16px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.1s;
+	text-align: left;
+	display: flex;
+	gap: 0px 10px;
+	align-items: center;
+}
+#left-brand>button:hover{
+	background: var(--dark-black);
+}
+#left-brand>button:active{
+	background: var(--dark-gray);
+}
+#left-brand>button>svg{
+	height: 24px;
+	width: 24px;
+}
+
+
+
+
+/*left-app*/
+#left-app{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#left-app>button{
+	height: 42px;
+	width: 244px;
+	padding: 6px 16px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.1s;
+	text-align: left;
+	display: flex;
+	gap: 0px 10px;
+	align-items: center;
+}
+#left-app>button:hover{
+	background: var(--dark-black);
+}
+#left-app>button:active{
+	background: var(--dark-gray);
+}
+#left-app>button>svg{
+	height: 24px;
+	width: 24px;
+}
+
+
+
+
+
+
+
+
+
+/*Bottom*/
+#bottom{
+	width: 100%;
+	display: grid;
+	grid-gap: 10px 0px;
+	align-items: flex-end;
+	align-content: flex-end;
+	justify-content: center;
+	padding: 40px 0px;
+}
+
+
+/*left-create*/
+#left-create{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#left-create>button{
+	height: 42px;
+	width: 244px;
+	padding: 6px 16px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.1s;
+	text-align: left;
+	display: flex;
+	gap: 0px 10px;
+	align-items: center;
+}
+#left-create>button:hover{
+	background: var(--dark-black);
+}
+#left-create>button:active{
+	background: var(--dark-gray);
+}
+#left-create>button>svg{
+	height: 24px;
+	width: 24px;
+}
+
+
+
+
+
+/*left-trash*/
+#left-trash{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#left-trash>button{
+	height: 42px;
+	width: 244px;
+	padding: 6px 16px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.1s;
+	text-align: left;
+	display: flex;
+	gap: 0px 10px;
+	align-items: center;
+}
+#left-trash>button:hover{
+	background: var(--dark-black);
+}
+#left-trash>button:active{
+	background: var(--dark-gray);
+}
+#left-trash>button>svg{
+	height: 24px;
+	width: 24px;
+}
+#border{
+	border: 1px solid gray;
+	width: 80%;
+	position: relative;
+	left: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================*/
+/*========================*/
+/*========================*/
+				/*Right Box*/
+/*========================*/
+/*========================*/
+/*========================*/
+
+#right-box{
+	width: auto;
+	height: 100vh;
+	width: 100%;
+	padding: 5px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#right-boxs-content{
+	display: grid;
+	position: relative;
+	margin-top: 72px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 10px;	
+}
+
+#right-main-box{
+	width: 100%;
+	height: 240px;
+	background: linear-gradient(104.19deg,rgba(37,1,83,0) 39.91%,#3b0388 77.15%),
+				linear-gradient(96.54deg,rgba(6,189,196,.78) 13.14%,rgba(2,214,215,0) 57.93%),#440496;
+	border-radius: 10px;
+}
+
+#top-text{
+	display: flex;
+	width: 100%;
+	height: 90px;
+}
+#left-space{
+	width: 25%;
+}
+#center-text{
+	width: 50%;
+	font-size: 32px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#right-space{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0px 5px
+}
+#right-space>button{
+	padding: 12px;
+	background: var(--dark-blue);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#right-space>button:hover{
+	background: var(--dark-purple);
+}
+
+#center-inp-box{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+#center-inp-box>#search{
+	height: 38px;
+	width: 520px;
+	background: var(--dark-black);
+	border: none;
+	text-align: left;
+	padding: 0px 10px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+}
+
+#center-inp-box>#search-btn{
+	height: 38px;
+	width: 38px;
+	background: var(--dark-black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+
+}
+
+#bottom-doc-box{
+	width: 100%;
+	height: 110px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#bottom-doc-box>#doc-main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0px 20px;
+}
+
+
+
+
+
+#bottom-doc-box>#doc-main>.docs-content>.inner-child{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+#bottom-doc-box>#doc-main>.docs-content>.inner-child{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 5px 0px;
+	width: 100px;
+}
+#bottom-doc-box>#doc-main>.docs-content>.inner-child>span:nth-child(1){
+	width: 100%;
+}
+#bottom-doc-box>#doc-main>.docs-content>.inner-child>span:nth-child(1)>svg{
+	height: 30px;
+	width: 30px;
+	padding: 10px;
+	box-sizing: content-box;
+	border-radius: 50%;
+	background: white;
+	cursor: pointer;
+}
+#bottom-doc-box>#doc-main>.docs-content>.inner-child>span:nth-child(1)>svg:hover{
+	background: wheat;
+	transform: scale(1.1);
+}
+#bottom-doc-box>#doc-main>.docs-content>.inner-child>span:nth-child(2){
+	width: 100%;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#svg-c-1{
+	color: #004bcc;
+}
+#svg-c-2{
+	color: #2e8cff;
+}
+#svg-c-3{
+	color: #489d4a;
+}
+#svg-c-4{
+	color: orange;
+}
+#svg-c-5{
+	color: red;
+}
+#svg-c-6{
+	color: pink;
+}
+#svg-c-7{
+	color: lightblue;
+}
+#svg-c-8{
+	color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+#responsive-more-btn{
+		display: none;
+}
+#absolute-links{
+	display: none;
+}
+#boredr2{
+	display: none;
+}
+#canva-pro2{
+	display: none;
+}
